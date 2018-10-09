@@ -16,7 +16,10 @@
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543d5bc17a820d48"></script>
 <script>
-    
+    if (location.protocol != 'https:')
+{
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
     function show_payment(){
         alert("Payment Solutions comming soon.. in the meantime to place an order please call: 07922569680 or email: info@cbdcartel.co.uk and we will get back to you in due course");
     }
