@@ -57,6 +57,20 @@
         
         
     }
+    
+     function openbasket(){
+        
+        document.getElementById("basket").style.display="";
+        
+        
+    }
+    
+        function closebasket(){
+        
+        document.getElementById("basket").style.display="none";
+        
+        
+    }
     </script>
     
     
@@ -125,6 +139,24 @@
 <body style="padding-top:83px;backfground:linear-gradient(135deg, orange, orange 60%, cyan);margin: auto; min-width: 300px; paddizng-top: 
 
 122px; font-family: tahoma; /*! max-width: 300px; */" onload="start();">
+    
+    
+     <div id="basket" style="display:none;width:80%; /*! margin:auto; */ position: absolute;top: 50%;left: 10%;z-index: 400;border: 1px solid lightgrey;background: lightgrey;height: 400px;">
+        <br>
+        <div style="width:95%; margin:auto;">
+        
+            <h3>Your Basket</h3> 
+            
+            
+            
+             <center style="padding-top: 10px;padding-bottom: 10px;">
+      <input type="checkbox" id="iagree" >By clicking here you indicate that you agree to the above terms and conditions.</input></br>
+    <button onclick="show_payment();">Proceed to checkout</button> <button onclick="closebasket()"> Cancel </button></center>
+         </div>
+            
+            
+         </div>
+    
     
     
     <div id="aggree" style="display:none;width:80%; /*! margin:auto; */ position: absolute;top: 50%;left: 10%;z-index: 400;border: 1px solid lightgrey;background: lightgrey;height: 400px;">
@@ -516,7 +548,7 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                                     <br>
                                 </div>
                                 <br>
-                                <button onclick="show_payment();"> Buy Now </button> <button onclick="show_payment();"> +Add to Basket </button>
+                                <button onclick="show_payment();"> Buy Now </button> <button onclick="open_basket();"> +Add to Basket </button>
                                 <br><br>
                             </center>
 
@@ -636,7 +668,7 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                                     <br>
                                 </div>
                                 <br>
-                                <button onclick="show_payment();"> Buy Now </button> <button onclick="show_payment();"> +Add to Basket </button>
+                                <button onclick="show_payment();"> Buy Now </button> <button onclick="open_basket();"> +Add to Basket </button>
                                 <br><br>
                             </center>
 
@@ -755,7 +787,7 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                                     <br>
                                 </div>
                                 <br>
-                                <button onclick="show_payment();"> Buy Now </button> <button onclick="show_payment();"> +Add to Basket </button>
+                                <button onclick="show_payment();"> Buy Now </button> <button onclick="open_basket();"> +Add to Basket </button>
                                 <br><br>
                             </center>
 
