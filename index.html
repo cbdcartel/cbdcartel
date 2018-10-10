@@ -33,10 +33,22 @@
     
     function show_payment2(){
         
-        document.getElementById("aggree").style.display="none";
+        
+    if (document.getElementById("iagree").checked == 1){
+      document.getElementById("aggree").style.display="none";
         
         
-        alert("Payment Solutions comming soon.. in the meantime to place an order please call: 07922569680 or email: info@cbdcartel.co.uk and we will get back to you in due course");
+        
+        
+        
+   alert("Payment Solutions comming soon.. in the meantime to place an order please call: 07922569680 or email: info@cbdcartel.co.uk and we will get back to you in due course");
+    } else {
+      alert("Please read and agree to the Terms and Conditions before proceeding to Checkout!");
+    }
+  
+        
+        
+        
     }
     
       function closepayment(){
@@ -259,8 +271,8 @@ You agree that from time to time we may remove the service for indefinite period
 
 </div>
   <center style="padding-top: 10px;padding-bottom: 10px;">
-      <input type="chkbox" id="iagree">By clicking here you indicate that you agree to the above terms and conditions.</input></br>
-    <button onclick="show_payment2();">Continuee to checkout</button> <button onclick="closepayment()"> Cancel </button></center>
+      <input type="chkbox" id="iagree" >By clicking here you indicate that you agree to the above terms and conditions.</input></br>
+    <button onclick="show_payment2();">Proceed to checkout</button> <button onclick="closepayment()"> Cancel </button></center>
     </div>
     
     
