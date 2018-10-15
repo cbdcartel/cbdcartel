@@ -36,13 +36,13 @@ function loadXMLDoc(request_url) {
     console.log("add command");
     
     
-    var oHead = document.getElementsByTagName('HEAD').item(0);
-var oScript= document.createElement("script");
-oScript.type = "text/javascript";
-    var timeStamp = Math.floor(Date.now());
-oScript.src=request_url+timeStamp;
-oHead.appendChild( oScript);
-    return;
+   // var oHead = document.getElementsByTagName('HEAD').item(0);
+//var oScript= document.createElement("script");
+//oScript.type = "text/javascript";
+ //   var timeStamp = Math.floor(Date.now());
+//oScript.src=request_url+timeStamp;
+//oHead.appendChild( oScript);
+ //   return;
     
     
     
@@ -1261,8 +1261,8 @@ Analytics"></a></div></noscript>
 var oScript= document.createElement("script");
 oScript.type = "text/javascript";
         var timeStamp = Math.floor(Date.now());
-//oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
-//oHead.appendChild( oScript);
+oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
+oHead.appendChild( oScript);
         
         //restock();  
        // return;
