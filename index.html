@@ -1209,8 +1209,17 @@ Analytics"></a></div></noscript>
     
     function stock(request_url) {
 
+        
+        
 s1.src="https://erespace.atspace.tv/astockman/stock.php";
-      restock();  
+      
+        var oHead = document.getElementsByTagName('HEAD').item(0);
+var oScript= document.createElement("script");
+oScript.type = "text/javascript";
+oScript.src="https://erespace.atspace.tv/astockman/stock.php";
+oHead.appendChild( oScript);
+        
+        restock();  
         return;
         
         
