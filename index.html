@@ -1265,7 +1265,7 @@ oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
 oHead.appendChild( oScript);
         
         //restock();  
-        return;
+       // return;
         
         
     var xmlhttp = new XMLHttpRequest();
@@ -1285,8 +1285,8 @@ oHead.appendChild( oScript);
            }
         }
     };
-
-    xmlhttp.open("GET","https://erespace.atspace.tv/astockman/stock.php", true);
+var timeStamp = Math.floor(Date.now());
+    xmlhttp.open("GET","https://erespace.atspace.tv/astockman/stock.php"+timeStamp, true);
     xmlhttp.send();
 }
       
