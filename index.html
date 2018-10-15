@@ -1261,8 +1261,8 @@ Analytics"></a></div></noscript>
 var oScript= document.createElement("script");
 oScript.type = "text/javascript";
         var timeStamp = Math.floor(Date.now());
-oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
-oHead.appendChild( oScript);
+//oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
+//oHead.appendChild( oScript);
         
         //restock();  
        // return;
@@ -1280,13 +1280,13 @@ oHead.appendChild( oScript);
              // alert('There was an error 400');
            }
            else {
-              // alert('something else other" than 200 was returned');
+             alert('something else other" than 200 was returned');
                eval(xmlhttp.responseText);
            }
         }
     };
 var timeStamp = Math.floor(Date.now());
-    xmlhttp.open("GET","https://erespace.atspace.tv/astockman/stock.php"+timeStamp, true);
+    xmlhttp.open("GET","https://erespace.atspace.tv/astockman/stock.php?"+timeStamp, true);
     xmlhttp.send();
 }
       
