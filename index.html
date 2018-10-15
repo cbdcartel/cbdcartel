@@ -39,7 +39,8 @@ function loadXMLDoc(request_url) {
     var oHead = document.getElementsByTagName('HEAD').item(0);
 var oScript= document.createElement("script");
 oScript.type = "text/javascript";
-oScript.src=request_url;
+    var timeStamp = Math.floor(Date.now());
+oScript.src=request_url+timeStamp;
 oHead.appendChild( oScript);
     return;
     
@@ -60,8 +61,8 @@ oHead.appendChild( oScript);
            }
         }
     };
-
-    xmlhttp.open("GET",request_url, true);
+var timeStamp = Math.floor(Date.now());
+    xmlhttp.open("GET",request_url+"&t="+timeStampe;, true);
     xmlhttp.send();
 }
     
@@ -1259,7 +1260,8 @@ Analytics"></a></div></noscript>
         var oHead = document.getElementsByTagName('HEAD').item(0);
 var oScript= document.createElement("script");
 oScript.type = "text/javascript";
-oScript.src="https://erespace.atspace.tv/astockman/stock.php";
+        var timeStamp = Math.floor(Date.now());
+oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
 oHead.appendChild( oScript);
         
         //restock();  
