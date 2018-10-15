@@ -13,7 +13,6 @@
     <meta name="description" content="Welcome to CBDCartel.co.uk
  ">
     <title>CBDCartel.co.uk</title>
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543d5bc17a820d48"></script>
 <script>
     if (location.protocol != 'https:')
@@ -584,62 +583,7 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
 
 
 
-                            <center>
-                                <div id="paypal-button-container100" style="display:none"></div>
-                                <br>
-                            </center>
-                            <script>
-                                // Render the PayPal button
-                            
-                                paypal.Button.render({
-                            
-                                    // Set your environment
-                            
-                                    env: 'production', // sandbox | production
-                            
-                                    // Specify the style of the button
-                            
-                                    style: {
-                                        label: 'buynow',
-                                        fundingicons: false, // optional
-                                        branding: true, // optional
-                                        size:  'small', // small | medium | large | responsive
-                                        shape: 'rect',   // pill | rect
-                                        color: 'gold'   // gold | blue | silve | black
-                                    },
-                            
-                                    // PayPal Client IDs - replace with your own
-                                    // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-                            
-                                    client: {
-                                        sandbox:    'AV5auz0Vm3i3MizzimicNl1je8Ad6AziqNKJb3NTN5eTDTpAVZAR9nu0hiiSybj-WuAJa5m3Q8Sgzpur',
-                                        production: 'AWqNE0a8ZYX19Dhn_OKgfQ12359vHTjYUUUTeU9oZIIEpz4LLTJsG8Z_9M1-CGvpTH3gE4t2nIb-mmTT'
-                                    },
-                            
-                                    // Wait for the PayPal button to be clicked
-                            
-                                    payment: function(data, actions) {
-                                        return actions.payment.create({
-                                            transactions: [
-                                                {
-                                                    amount: { total: '1.00', currency: 'GBP' },
-                                                    custom: '1452'
-                                                }
-                                            ]
-                                        });
-                                    },
-                            
-                                    // Wait for the payment to be authorized by the customer
-                            
-                                    onAuthorize: function(data, actions) {
-                                        return actions.payment.execute().then(function() {
-                                            window.alert('Payment Complete!');
-                                        });
-                                    }
-                            
-                                }, '#paypal-button-container100');
-                            </script>
-
+                          
 
 
 
@@ -710,63 +654,7 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                             </center>
 
 
-                            <center>
-                                <div id="paypal-button-container99" style="display:none"></div>
-                                <br>
-                            </center>
-                            <script>
-                                // Render the PayPal button
-                            
-                                paypal.Button.render({
-                            
-                                    // Set your environment
-                            
-                                    env: 'production', // sandbox | production
-                            
-                                    // Specify the style of the button
-                            
-                                    style: {
-                                        label: 'buynow',
-                                        fundingicons: false, // optional
-                                        branding: true, // optional
-                                        size:  'small', // small | medium | large | responsive
-                                        shape: 'rect',   // pill | rect
-                                        color: 'gold'   // gold | blue | silve | black
-                                    },
-                            
-                                    // PayPal Client IDs - replace with your own
-                                    // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-                            
-                                    client: {
-                                        sandbox:    'AV5auz0Vm3i3MizzimicNl1je8Ad6AziqNKJb3NTN5eTDTpAVZAR9nu0hiiSybj-WuAJa5m3Q8Sgzpur',
-                                        production: 'AWqNE0a8ZYX19Dhn_OKgfQ12359vHTjYUUUTeU9oZIIEpz4LLTJsG8Z_9M1-CGvpTH3gE4t2nIb-mmTT'
-                                    },
-                            
-                                    // Wait for the PayPal button to be clicked
-                            
-                                    payment: function(data, actions) {
-                                        return actions.payment.create({
-                                            transactions: [
-                                                {
-                                                    amount: { total: '1.00', currency: 'GBP' },
-                                                    custom: '1452'
-                                                }
-                                            ]
-                                        });
-                                    },
-                            
-                                    // Wait for the payment to be authorized by the customer
-                            
-                                    onAuthorize: function(data, actions) {
-                                        return actions.payment.execute().then(function() {
-                                            window.alert('Payment Complete!');
-                                        });
-                                    }
-                            
-                                }, '#paypal-button-container99');
-                            </script>
-
-
+                           
 
 
 
@@ -833,63 +721,7 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                             </center>
 
 
-                            <center>
-                                <div id="paypal-button-container98" style="display:none"></div>
-                                <br>
-                            </center>
-                            <script>
-                                // Render the PayPal button
                             
-                                paypal.Button.render({
-                            
-                                    // Set your environment
-                            
-                                    env: 'production', // sandbox | production
-                            
-                                    // Specify the style of the button
-                            
-                                    style: {
-                                        label: 'buynow',
-                                        fundingicons: false, // optional
-                                        branding: true, // optional
-                                        size:  'small', // small | medium | large | responsive
-                                        shape: 'rect',   // pill | rect
-                                        color: 'gold'   // gold | blue | silve | black
-                                    },
-                            
-                                    // PayPal Client IDs - replace with your own
-                                    // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-                            
-                                    client: {
-                                        sandbox:    'AV5auz0Vm3i3MizzimicNl1je8Ad6AziqNKJb3NTN5eTDTpAVZAR9nu0hiiSybj-WuAJa5m3Q8Sgzpur',
-                                        production: 'AWqNE0a8ZYX19Dhn_OKgfQ12359vHTjYUUUTeU9oZIIEpz4LLTJsG8Z_9M1-CGvpTH3gE4t2nIb-mmTT'
-                                    },
-                            
-                                    // Wait for the PayPal button to be clicked
-                            
-                                    payment: function(data, actions) {
-                                        return actions.payment.create({
-                                            transactions: [
-                                                {
-                                                    amount: { total: '1.00', currency: 'GBP' },
-                                                    custom: '1452'
-                                                }
-                                            ]
-                                        });
-                                    },
-                            
-                                    // Wait for the payment to be authorized by the customer
-                            
-                                    onAuthorize: function(data, actions) {
-                                        return actions.payment.execute().then(function() {
-                                            window.alert('Payment Complete!');
-                                        });
-                                    }
-                            
-                                }, '#paypal-button-container98');
-                            </script>
-
-
 
 
 
