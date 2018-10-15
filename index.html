@@ -22,7 +22,27 @@
 }
     console.log(document.cookie);
 // alert(document.cookie);
-    
+    <script type="text/javascript">
+function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+           if (xmlhttp.status == 200) {
+               //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+           }
+           else if (xmlhttp.status == 400) {
+              alert('There was an error 400');
+           }
+           else {
+               alert('something else other than 200 was returned');
+           }
+        }
+    };
+
+    xmlhttp.open("GET",request_url, true);
+    xmlhttp.send();
+}
     
     function show_payment(){
         
@@ -553,8 +573,8 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                                 <br>
                                     
 <center>
-<a style="text-decoration:none"  href="https://erespace.atspace.tv/astockman/add.php?id=cbds1&command=del" target="addstock"><button>-</button></a>
-<a style="text-decoration:none"  href="https://erespace.atspace.tv/astockman/add.php?id=cbds1&command=add" target="addstock"><button>+</button></a>
+<a style="text-decoration:none"  onclick='loadXMLDoc("https://erespace.atspace.tv/astockman/add.php?id=cbds1&command=del");' target="addstock"><button>-</button></a>
+<a style="text-decoration:none" onclick='loadXMLDoc("https://erespace.atspace.tv/astockman/add.php?id=cbds1&command=");add' target="addstock"><button>+</button></a>
 </center>
                                     
                                  <button style="display:none" onclick="open_basket();"> +Add to Basket </button>
@@ -678,8 +698,11 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                                 </div>
                                 <br>
                                   <center>
-<a style="text-decoration:none"  href="https://erespace.atspace.tv/astockman/add.php?id=cbds2&command=del" target="addstock"><button>-</button></a>
-<a style="text-decoration:none"  href="https://erespace.atspace.tv/astockman/add.php?id=cbds2&command=add" target="addstock"><button>+</button></a>
+                                      
+                                      
+                                      
+<a style="text-decoration:none"  onclick='loadXMLDoc("https://erespace.atspace.tv/astockman/add.php?id=cbds2&command=del");' target="addstock"><button>-</button></a>
+<a style="text-decoration:none"  onclick='loadXMLDoc("https://erespace.atspace.tv/astockman/add.php?id=cbds2&command=add");' target="addstock"><button>+</button></a>
 </center>
                                  <button style="display:none" onclick="open_basket();"> +Add to Basket </button>
                                 
@@ -802,8 +825,8 @@ center;text-align:center;width:100%;background-,,color:grey;max-height:220px;mar
                                 </div>
                                 <br>
                             <center>
-<a style="text-decoration:none" href="https://erespace.atspace.tv/astockman/add.php?id=cbds3&command=del" target="addstock"><button>-</button></a>
-<a style="text-decoration:none"  href="https://erespace.atspace.tv/astockman/add.php?id=cbds3&command=add" target="addstock"><button>+</button></a>
+<a style="text-decoration:none" onclick='loadXMLDoc("https://erespace.atspace.tv/astockman/add.php?id=cbds3&command=del");'target="addstock"><button>-</button></a>
+<a style="text-decoration:none"  onclick='loadXMLDoc("https://erespace.atspace.tv/astockman/add.php?id=cbds3&command=add");' target="addstock"><button>+</button></a>
 </center>
                                  <button style="display:none" onclick="open_basket();"> +Add to Basket </button>
                                 <br><br>
