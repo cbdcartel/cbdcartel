@@ -27,6 +27,19 @@
 // alert(document.cookie);
    
 function loadXMLDoc(request_url) {
+    
+    console.log("add command");
+    
+    
+    var oHead = document.getElementsByTagName('HEAD').item(0);
+var oScript= document.createElement("script");
+oScript.type = "text/javascript";
+oScript.src=request_url;
+oHead.appendChild( oScript);
+    return;
+    
+    
+    
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
