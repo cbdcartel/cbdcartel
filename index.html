@@ -1246,39 +1246,34 @@ Analytics"></a></div></noscript>
 
         
         
-//s1.src="https://erespace.atspace.tv/astockman/stock.php";
-      
-        var oHead = document.getElementsByTagName('HEAD').item(0);
-var oScript= document.createElement("script");
-oScript.type = "text/javascript";
-        var timeStamp = Math.floor(Date.now());
-oScript.src="https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
-oHead.appendChild( oScript);
-        
-        //restock();  
-       // return;
-        
-        
-    var xmlhttp = new XMLHttpRequest();
-
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
-           if (xmlhttp.status == 200) {
-               //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
-               eval(xmlhttp.responseText);
-           }
-           else if (xmlhttp.status == 400) {
-             // alert('There was an error 400');
-           }
-           else {
-             alert('something else other" than 200 was returned');
-               eval(xmlhttp.responseText);
-           }
-        }
-    };
+ console.log(document.cookie); 
+    console.log("add command");
+    
+    
+    var http = new XMLHttpRequest();
 var timeStamp = Math.floor(Date.now());
-    xmlhttp.open("GET","https://erespace.atspace.tv/astockman/stock.php?"+timeStamp, true);
-    xmlhttp.send();
+
+    var url = "http://erespace.atspace.tv/astockman/stock.php?"+timeStamp&t="+timeStamp;
+var params = 'orem=ipsum&name=binny';
+http.open('POST', url, true);
+
+//Send the proper header information along with the request
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send(params);
+    
+    return;
+        
+        
+  
+        
+        
+    
 }
       
      
