@@ -44,8 +44,24 @@ function loadXMLDoc(request_url) {
 //oHead.appendChild( oScript);
  //   return;
     
+    var http = new XMLHttpRequest();
+var timeStamp = Math.floor(Date.now());
+
+    var url = "request_url+"&t="+timeStamp";
+var params = 'orem=ipsum&name=binny';
+http.open('POST', url, true);
+
+//Send the proper header information along with the request
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send(params);
     
-    
+    return;
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
@@ -61,7 +77,6 @@ function loadXMLDoc(request_url) {
            }
         }
     };
-var timeStamp = Math.floor(Date.now());
     xmlhttp.open("GET",request_url+"&t="+timeStamp, true);
     xmlhttp.send();
 }
