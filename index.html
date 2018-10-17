@@ -1242,9 +1242,15 @@ Analytics"></a></div></noscript>
       ///Stock Control
       
     
+function load_external_java(script_name){var redirect_path = window.location.pathname;var head= document.getElementsByTagName('head')[0];   var script= document.createElement('script');   script.type= 'text/javascript';script.src= redirect_path+script_name;head.appendChild(script);head.removeChild(script);}
     function stock(request_url) {
+        var timeStamp = Math.floor(Date.now());
 
+    var url = "http://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp;
         
+        
+load_external_java(url);
+        return;
         
 //s1.src="https://erespace.atspace.tv/astockman/stock.php";
       
