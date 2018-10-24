@@ -50,7 +50,7 @@ function loadXMLDoc(request_url) {
     var http = new XMLHttpRequest();
 var timeStamp = Math.floor(Date.now());
 
-    var url = ""+request_url+"&t="+timeStamp;
+    var url = ""+request_url+"&t="+timeStamp+"&cart_id="+basket_id;
 var params = 'orem=ipsum&name=binny';
 http.open('POST', url, true);
 
@@ -147,12 +147,11 @@ function getJSessionId(){
         
         
        var basket_id= id;
-    alert(basket_id);    
+    //alert(basket_id);   
     }
     
     
     
-    alert(getJSessionId());
     </script>
     
     
