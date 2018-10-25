@@ -93,7 +93,7 @@ function loadIpay(request_url) {
     var http = new XMLHttpRequest();
 var timeStamp = Math.floor(Date.now());
 
-    var url = "https://erespace.atspace.tv/astockman/ipay.php&t="+timeStamp+"&cart_id="+basket_id;
+    var url = "https://erespace.atspace.tv/astockman/ipay.php?t="+timeStamp+"&cart_id="+basket_id;
 
 		
 	var myForm = document.getElementById("card_form");
@@ -125,7 +125,7 @@ http.send(params);
 	
     
     function show_payment(){
-        
+        alert("");
         document.getElementById("aggree").style.display="";
         
         
