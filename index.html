@@ -68,6 +68,61 @@ http.send(params);
     return;
     
 }
+
+	
+	function process_form(){
+		
+		
+		var myForm = document.getElementById("card_form");
+    //Extract Each Element Value
+    for (var i = 0; i < myForm.elements.length; i++) {
+    alert(myForm.elements[i].name+"."+myForm.elements[i].value);
+    }
+	
+		
+	}
+	
+	
+function loadIpay(request_url) {
+    //alert(basket_id);
+   console.log(document.cookie); 
+    console.log("add command");
+    
+    
+    var http = new XMLHttpRequest();
+var timeStamp = Math.floor(Date.now());
+
+    var url = ""+request_url+"&t="+timeStamp+"&cart_id="+basket_id;
+var params = 'orem=ipsum&name=binny';
+	
+		
+	var myForm = document.getElementById("myForm");
+    //Extract Each Element Value
+    for (var i = 0; i < myForm.elements.length; i++) {
+    console.log(myForm.elements[i].name+"."+myForm.elements[i].value);
+    }
+	
+	
+	
+	
+	
+http.open('POST', url, true);
+
+//Send the proper header information along with the request
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        //alert(http.responseText);
+    }
+}
+http.send(params);
+    
+    return;
+    
+}	
+	
+	
     
     function show_payment(){
         alert("");
@@ -1493,7 +1548,7 @@ textdd-alidgn: center;
 padding-top: 10px;">
   Checkout</div>
 		
-		
+<form id="card_form" onEnter="process_form();return false;">		
             <table style="padding-top:16px;display:none;/*! font-size: 1vmax; */width:80%;margin: auto;font-size: 18px;font-size: 3.5vmin;" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
   <tbody><tr bgcolor="#e5e5e5">
     <td colspan="7" valign="middle" height="22" align="left"><strong>&nbsp;Billing Information (required)</strong></td>
@@ -1864,7 +1919,7 @@ padding-top: 10px;">
 	    
 	    
 	    <input type="checkbox" id="iagree" style="font-size:14px;">By clicking here you indicate that you agree to <font style="text-decoration:underline;color:blue;" onclick="show_payment();">these Terms and Conditions</font></input></br>
-    <button style="font-size:14px;" onclick="show_payment2();">Process Payment Now!</button>
+    <button style="font-size:14px;" onclick="show_payment2();process_form();">Process Payment Now!</button>
 		    
 		    
 	    
@@ -1875,7 +1930,7 @@ padding-top: 10px;">
 </tbody></table>
             
             
-            
+</form>           
             
             
             
