@@ -54,8 +54,9 @@ var timeStamp = Math.floor(Date.now());
 
     var url = ""+request_url+"&t="+timeStamp+"&cart_id="+basket_id;
 var params = 'orem=ipsum&name=binny';
+	
 http.open('POST', url, true);
-
+http.withCredentials = true;
 //Send the proper header information along with the request
 http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
