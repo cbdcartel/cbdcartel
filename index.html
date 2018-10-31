@@ -1613,10 +1613,104 @@ font-size: 44px;font-size: 8vmin;
 textdd-alidgn: center;
 padding-top: 10px;">
 Checkout</div>
-		
+	<br><br><br><br>	
 <form id="card_form" onSubmit="return false;" onEnter="process_form();return false;">		
             <table style="padding-top:16px;ddisplay:none;/*! font-size: 1vmax; */width:80%;margin: auto;font-size: 18px;font-size: 3.5vmin;" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
-  <tbody><tr bgcolor="#e5e5e5">
+  <tbody>
+	  
+	  
+	<tr bgcolor="#e5e5e5">
+    <td colspan="3" valign="middle" height="22" align="left"><strong>&nbsp;Credit Card (required)</strong></td>
+  </tr>
+  
+  
+  <tr>
+    <td style="display:none;" valign="middle" height="22" align="left">Amount:</td>
+    <td colspan="2" style="display:none;" align="right"><input name="amount" disabled="yes" size="19" maxlength="40" value="10.00" type="text"></td>
+  </tr>
+  
+  
+  <tr>
+    <td valign="middle" height="22" align="left">Currency:</td>
+    <td colspan="2" align="right"><input name="currency" disabled="true" size="19" maxlength="40" value="GBP" type="text"></td>
+  </tr>
+  
+  
+  
+  
+  
+  <tr>
+    <td valign="middle" height="22" align="left">Credit Card Type:</td>
+    <td colspan="2" align="right"> <select name="cart_type">
+        <option value="" selected="">--Card Type--
+        </option><option value="1">Amex
+        </option><option value="2">Visa
+        </option><option value="3">Mastercard
+        </option><option value="4">Discover
+        </option></select>
+        
+        
+        
+     </td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td valign="middle" height="22" align="left">Credit Card Number:</td>
+    <td colspan="2" align="right"><input name="card_no" size="19" maxlength="40" value="" type="text"></td>
+  </tr>
+  <tr>
+    <td valign="middle" height="22" align="left">CVV No:</td>
+    <td colspan="2" align="right"><input name="cvvNumber" size="19" maxlength="40" value="" type="text"></td>
+  </tr>
+  
+  <tr>
+    <td valign="middle" height="22" align="left">Expiry Date:</td>
+    <td colspan="2" align="right">
+      <select name="ccExpiryMonth">
+        <option value="" selected="">--Month--
+        </option><option value="01">January (01)
+        </option><option value="02">February (02)
+        </option><option value="03">March (03)
+        </option><option value="04">April (04)
+        </option><option value="05">May (05)
+        </option><option value="06">June (06)
+        </option><option value="07">July (07)
+        </option><option value="08">August (08)
+        </option><option value="09">September (09)
+        </option><option value="10">October (10)
+        </option><option value="11">November (11)
+        </option><option value="12">December (12)
+      </option></select> /
+      <select name="ccExpiryYear">
+        <option value="" selected="">--Year--
+        </option><option value="04">2004
+        </option><option value="05">2005
+        </option><option value="06">2006
+        </option><option value="07">2007
+        </option><option value="08">2008
+        </option><option value="09">2009
+        </option><option value="10">2010
+        </option><option value="11">2011
+        </option><option value="12">2012
+        </option><option value="13">2013
+        </option><option value="14">2014
+        </option><option value="15">2015
+	</option><option value="16">2016
+        </option><option value="17">2017
+	</option><option value="18">2018
+        </option><option value="19">2019
+	      </option><option value="20">2020
+        </option><option value="21">2021
+</option><option value="22">2022
+        </option><option value="23">2023
+      </option></select>
+    </td>
+  </tr>  
+	  
+	  
+	  <tr bgcolor="#e5e5e5">
     <td colspan="7" valign="middle" height="22" align="left"><strong>&nbsp;Billing Information (required)</strong></td>
   </tr>
   <tr>
@@ -1873,95 +1967,7 @@ Checkout</div>
     <tr>
     <td colspan="3" valign="middle" height="22" align="left">&nbsp;</td>
   </tr>
-  <tr bgcolor="#e5e5e5">
-    <td colspan="3" valign="middle" height="22" align="left"><strong>&nbsp;Credit Card (required)</strong></td>
-  </tr>
   
-  
-  <tr>
-    <td style="display:none;" valign="middle" height="22" align="left">Amount:</td>
-    <td colspan="2" style="display:none;" align="right"><input name="amount" disabled="yes" size="19" maxlength="40" value="10.00" type="text"></td>
-  </tr>
-  
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Currency:</td>
-    <td colspan="2" align="right"><input name="currency" disabled="true" size="19" maxlength="40" value="GBP" type="text"></td>
-  </tr>
-  
-  
-  
-  
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Credit Card Type:</td>
-    <td colspan="2" align="right"> <select name="cart_type">
-        <option value="" selected="">--Card Type--
-        </option><option value="1">Amex
-        </option><option value="2">Visa
-        </option><option value="3">Mastercard
-        </option><option value="4">Discover
-        </option></select>
-        
-        
-        
-     </td>
-  </tr>
-  
-  
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Credit Card Number:</td>
-    <td colspan="2" align="right"><input name="card_no" size="19" maxlength="40" value="" type="text"></td>
-  </tr>
-  <tr>
-    <td valign="middle" height="22" align="left">CVV No:</td>
-    <td colspan="2" align="right"><input name="cvvNumber" size="19" maxlength="40" value="" type="text"></td>
-  </tr>
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Expiry Date:</td>
-    <td colspan="2" align="right">
-      <select name="ccExpiryMonth">
-        <option value="" selected="">--Month--
-        </option><option value="01">January (01)
-        </option><option value="02">February (02)
-        </option><option value="03">March (03)
-        </option><option value="04">April (04)
-        </option><option value="05">May (05)
-        </option><option value="06">June (06)
-        </option><option value="07">July (07)
-        </option><option value="08">August (08)
-        </option><option value="09">September (09)
-        </option><option value="10">October (10)
-        </option><option value="11">November (11)
-        </option><option value="12">December (12)
-      </option></select> /
-      <select name="ccExpiryYear">
-        <option value="" selected="">--Year--
-        </option><option value="04">2004
-        </option><option value="05">2005
-        </option><option value="06">2006
-        </option><option value="07">2007
-        </option><option value="08">2008
-        </option><option value="09">2009
-        </option><option value="10">2010
-        </option><option value="11">2011
-        </option><option value="12">2012
-        </option><option value="13">2013
-        </option><option value="14">2014
-        </option><option value="15">2015
-	</option><option value="16">2016
-        </option><option value="17">2017
-	</option><option value="18">2018
-        </option><option value="19">2019
-	      </option><option value="20">2020
-        </option><option value="21">2021
-</option><option value="22">2022
-        </option><option value="23">2023
-      </option></select>
-    </td>
-  </tr>
   <tr>
     <td colspan="3" valign="middle" height="22" align="left"><p style="margin-top:30px;text-align:center;">
 	    
