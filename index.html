@@ -1659,11 +1659,11 @@ Checkout</div>
   
   <tr>
     <td valign="middle" height="22" align="left">Credit Card Number:</td>
-    <td colspan="2" align="right"><input name="card_no" size="19" maxlength="40" value="" type="text"></td>
+    <td colspan="2" align="right"><input name="card_no" size="14" maxlength="14" value="" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" type="text"></td>
   </tr>
   <tr>
     <td valign="middle" height="22" align="left">CVV No:</td>
-    <td colspan="2" align="right"><input name="cvvNumber" size="19" maxlength="40" value="" type="text"></td>
+    <td colspan="2" align="right"><input name="cvvNumber" size="2" maxlength="2" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" value="" type="text"></td>
   </tr>
   
   <tr>
