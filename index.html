@@ -48,7 +48,7 @@ function loadXMLDoc(request_url) {
    console.log(document.cookie); 
     console.log("add command");
     
-    
+    document.getElementById("hello").display = "";
     var http = new XMLHttpRequest();
 var timeStamp = Math.floor(Date.now());
 
@@ -63,6 +63,10 @@ http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 http.onreadystatechange = function() {//Call a function when the state changes.
     if(http.readyState == 4 && http.status == 200) {
         //alert(http.responseText);
+	    
+	  // document.getElementById("hello").innerHTML = "<B>Adding To Basket ---Please Wait</b>";
+	      document.getElementById("hello").display = "none";
+	    
     }
 }
 http.send(params);
@@ -362,11 +366,7 @@ lighter;margin-boddttom: 4px;position: fixed;top: 40px;left: 0px;color: black;wi
             <div id="subjectviral" style="text-align:justify;text-shadow: 3px 2px 2px rgba(150, 150, 150, 1);font-size: 12px;width: 
 
 96%;margin: 0%;word-wrap:break-word">
-                <b>Welcome to 100Pound</b> - The place you can promote your website/s, social profile/s, app page/s or online shop/service to hundreds of thousands of viewers instantly, for as little as &pound;1GBP for 100 days, perfect and affordable
-                advertising for the budding artist, ambitious entrepreneurs or the skilled bedroom programmist/programmer, to gain exposure, potential profit, possible leads and new followers.<br>
-                <b><u>How to use</u></b><br> Find a free space, click "buy this space for 100days for X GBP" fill out the available form, with image url and website link then go ahead to checkout to complete purchase of the desired space.
-                <i>That Simple</i>
-
+		    <b>Adding To Basket -- Please Wait </b>
 
 
 
@@ -1217,7 +1217,7 @@ We are happy to refund any item purchased from www.cbdcartel.co.uk and returned 
                     <h1>Contact CBDCartel.co.uk</h1>
                     <p>
                         <h2>Customer Service - Mon-Fri - 9am - 5pm</h2>
-                        07922569680<br>
+                        07946135915<br>
                         <h2>E-mail:</h2>
                         info@cbdcartel.co.uk<br>
                         <h2>Address:</h2>
