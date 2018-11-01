@@ -1636,6 +1636,9 @@ font-size: 16px;
 
 font-size: 3.5vh;;"  onEnter="show_payment2();return false;">		
             
+<div style="position:relative;min-width:290px;width: 29%;display: block;float: left;margin-right: 10px;
+background: transparent;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"	>
 	<strong>Credit/Debit Card Information:</strong><br><br>
 	
 	
@@ -1699,7 +1702,12 @@ Expiry Date:<br>
         </option><option value="23">2023
       </option></select>
 	
-	<br><br>
+	</div>
+	
+<div style="position:relative;min-width:290px;width: 29%;display: block;float: left;margin-right: 10px;
+background: transparent;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"	>
+	
 <strong>Billing Information:</strong><br><br>
 <input name="amount" style="display:none;" disabled="yes" size="19" maxlength="40" value="10.00" type="text">	
 	
@@ -1735,8 +1743,16 @@ Email:	<br>
     <br>
 	<button onclick="copy_form();">Click here to make Shipping Information the same as Billing Information</button>
   
+	</div>
+		
+		
 	
-	<br><br><br>
+	
+	
+<div style="position:relative;min-width:290px;width: 29%;display: block;float: left;margin-right: 10px;
+background: transparent;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"	>
+	
 <strong>Shipping Information:</strong><br><br>
 <input name="amount" style="display:none;" disabled="yes" size="19" maxlength="40" value="10.00" type="text">	
 	
@@ -1770,12 +1786,16 @@ Phone:<br>
 Email:	<br>
 <input id="shipping_email"  name="shipping_email" maxlength="14" value=""  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onidnput="this.value=this.value.replace(/(?![0-9])./gmi,'')" type="email" style="font-size: 16px;font-size: 3.5vmin;padding: 10px;width: 200px;text-align: center;" autocomplete="off" size="14"><br>		
     
-  
+	</div>  
 	
 	
 	
   
- <p style="margin-top:30px;text-align:center;">
+ <p style="margin-top: 30px;
+    text-align: center;
+    min-width: 100%;
+    clear: both;
+">
 	    
 	    
 	    <input type="checkbox" id="iagree" style="font-size:14px;">By clicking here you indicate that you agree to these <font style="text-decoration:underline;color:blue;" onclick="show_payment();">Terms and Conditions</font>/
