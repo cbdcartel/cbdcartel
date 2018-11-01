@@ -1613,61 +1613,35 @@ textdd-alidgn: center;
 padding-top: 10px;">
 Checkout</div>
 	<br><br><br><br>	
-<form id="card_form"  onSubmit="return false;"   onEnter="show_payment2();return false;">		
-            <table style="padding-top:16px;ddisplay:none;/*! font-size: 1vmax; */width:80%;margin: auto;font-size: 18px;font-size: 3.5vmin;" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
-  <tbody>
-	  
-	  
-	<tr bgcolor="#e5e5e5">
-    <td colspan="3" valign="middle" height="22" align="left"><strong>&nbsp;Credit/Debit Card (required)</strong></td>
-  </tr>
-  
-  
-  <tr>
-    <td style="display:none;" valign="middle" height="22" align="left">Amount:</td>
-    <td colspan="2" style="display:none;" align="right"><input name="amount" disabled="yes" size="19" maxlength="40" value="10.00" type="text"></td>
-  </tr>
-  
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Currency:</td>
-    <td colspan="2" align="right"><input name="currency" disabled="true" size="19" maxlength="40" value="GBP" type="text"></td>
-  </tr>
-  
-  
-  
-  
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Credit Card Type:</td>
-    <td colspan="2" align="right"> <select name="card_type">
+<form id="card_form"  onSubmit="return false;" style="text-align: center;
+
+font-size: 16px;
+
+font-size: 3.5vmin;"  onEnter="show_payment2();return false;">		
+            
+	<strong>Credit/Debit Card Information</strong><br><br>
+	
+	
+	
+ Card Number:<br> 
+  <input name="card_no" maxlength="14" value="" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" type="number" style="font-size: 16px;font-size: 3.5vmin;padding: 10px;width: 200px;text-align: center;" autocomplete="off" size="14"><br>		
+            Card Type:<br>
+<select name="card_type" style="font-size: 16px;font-size: 3.5vmin;padding: 10px;width: 222px;text-align: center;">
         <option value="" selected="">--Card Type--
         </option><option value="1">Amex
         </option><option value="2">Visa
         </option><option value="3">Mastercard
         </option><option value="4">Discover
-        </option></select>
-        
-        
-        
-     </td>
-  </tr>
-  
-  
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Credit Card Number:</td>
-    <td colspan="2" align="right"><input name="card_no" size="14" maxlength="14" value="" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" type="text"></td>
-  </tr>
-  <tr>
-    <td valign="middle" height="22" align="left">CVV No:</td>
-    <td colspan="2" align="right"><input name="cvvNumber" size="3" maxlength="3" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" value="" type="text"></td>
-  </tr>
-  
-  <tr>
-    <td valign="middle" height="22" align="left">Expiry Date:</td>
-    <td colspan="2" align="right">
-      <select name="ccExpiryMonth">
+        </option></select><br>
+
+CVV Number:<br>
+
+<input name="cvvNumber" style="style="font-size: 16px;font-size: 3.5vmin;padding: 10px;width: 200px;text-align: center;" " size="3" maxlength="3" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" value="" type="number"><br>
+
+
+Expiry Date:<br>
+
+<select name="ccExpiryMonth" style="font-size: 16px;font-size: 3.5vmin;padding: 10px;width: 110px;text-align: center;">
         <option value="" selected="">--Month--
         </option><option value="01">January (01)
         </option><option value="02">February (02)
@@ -1681,8 +1655,10 @@ Checkout</div>
         </option><option value="10">October (10)
         </option><option value="11">November (11)
         </option><option value="12">December (12)
-      </option></select> /
-      <select name="ccExpiryYear">
+      </option></select>/
+
+
+<select name="ccExpiryYear" style="font-size: 16px;font-size: 3.5vmin;padding: 10px;width: 110px;text-align: center;">
         <option value="" selected="">--Year--
         </option><option value="04">2004
         </option><option value="05">2005
@@ -1705,9 +1681,34 @@ Checkout</div>
 </option><option value="22">2022
         </option><option value="23">2023
       </option></select>
-    </td>
-  </tr>  
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<table style="padding-top:16px;ddisplay:none;/*! font-size: 1vmax; */width:80%;margin: auto;font-size: 18px;font-size: 3.5vmin;" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+  <tbody>
 	  
+	  
+	<tr bgcolor="#e5e5e5">
+    <td colspan="3" style="display:none;" align="middle" height="22" align="left"><strong>&nbsp;Credit/Debit Card (required)</strong></td>
+  </tr>
+  
+  
+  <tr>
+    <td style="display:none;" valign="middle" height="22" align="left">Amount:</td>
+    <td colspan="2" style="display:none;" align="right"><input name="amount" disabled="yes" size="19" maxlength="40" value="10.00" type="text"></td>
+  </tr>
+  
+  
+  	  
 	  
 	  <tr bgcolor="#e5e5e5">
     <td colspan="7" valign="middle" height="22" align="left"><strong>&nbsp;Billing Information (required)</strong></td>
