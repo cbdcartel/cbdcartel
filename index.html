@@ -35,12 +35,20 @@
          //alert('Firefox');
     //}
 	
+	
+	
+	var url = new URL(window.location.href );
+var redirect = url.searchParams.get("redirect");
+	console.log(redirect);
+	
+	if(redirect!="true"){
 	if(navigator.userAgent.indexOf("Safari") != -1)
     {
         //alert('Safari');
-	location.href="https://erespace.atspace.tv/astockman/safari.php?redirect=https://www.cbdcartel.co.uk";
+	location.href="https://erespace.atspace.tv/astockman/safari.php?redirect=https://www.cbdcartel.co.uk/?redirect=true";
 	
 	
+	}
 	}
 	
 	
