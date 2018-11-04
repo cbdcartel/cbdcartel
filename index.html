@@ -328,8 +328,34 @@ background-color: white;
 	    }
 	
 	
-	#sale_now_on { width: 0; height: 0; border-top: 100px solid red; border-left: 100px solid transparent; }    
+	#sale_now_on { 
 	    
+	    
+	    width: 2px;
+height: auto;
+border-top: 100px solid red;
+border-left: 100px solid transparent;
+position: absolute;
+right: 0px;
+top: 1px;
+border: 1px solid blue;
+	    
+	    }    
+	    #sale_now_on_sticker{
+		    
+		    position: absolute;
+left: -93px;
+top: -61px;
+background-color: transparent;
+color: white;
+//text-shadow: 3px 2px 2px green;
+: 40%;
+-webkit-transform: rotateZ(25deg);
+transform: rotateZ(45deg);
+font-size: 21px;
+font-size: 2.4vmin;
+width: 137px;
+	    }
 .total{
 	float:right;
 	    }
@@ -445,18 +471,7 @@ width: 1px; position: absolute; top: -9999px; z-index: 100000;" id="_atssh"></di
 	
 	<div id="sale_now_on"> 
 		
-		<h2 style="position: absolute;
-right: 174px;
-top: 0px;
-background-color: black;
-color: red;
-//text-shadow: 3px 2px 2px green;
-: 40%;
--webkit-transform: rotateZ(25deg);
-transform: rotateZ(45deg);
-font-size: 21px;
-font-size: 5vmin;
-">Sale Now On! </h2>
+	<h2 id="sale_now_on_sticker">Sale Now On! </h2>
 		
 	</div>
 	
