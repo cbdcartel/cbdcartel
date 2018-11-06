@@ -54,10 +54,12 @@ var redirect = url.searchParams.get("redirect");
    }
        
        
-function loadXMLDoc(request_url,elem) {
-	
+function loadXMLDoc(request_url,elem="dud") {
+	if(elem!="dud"){
 elem.disabled = "true";	
+	
 	elem.innerHTML="Updating Basket";
+	}
     //alert(basket_id);
 	
    console.log(document.cookie); 
@@ -78,10 +80,11 @@ http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 http.onreadystatechange = function() {//Call a function when the state changes.
     if(http.readyState == 4 && http.status == 200) {
         //alert(http.responseText);
-	   
+	if(elem!="dud"){
+   
  elem.disabled = "false";	
 	elem.innerHTML="Add to Basket";
-
+	}
 	  // document.getElementById("hello").innerHTML = "<B>Adding To Basket ---Please Wait</b>";
 	      document.getElementById("hello").display = "none";
 	    
