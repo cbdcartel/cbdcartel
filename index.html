@@ -13,7 +13,7 @@
     <meta name="description" content="Welcome to CBDCartel.co.uk -- The New UK home for Premium CBD(Cannabidiol) E-Liquids at Premium Competitive Prices with 1-2 Day Delivery Time. ">
     <title>CBDCartel.co.uk - The New UK home for Premium CBD(Cannabidiol) Products at Premium Competitive Prices with 1-2 Day Delivery Time.
 </title>
-   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
 <script>
 
@@ -272,7 +272,14 @@ function getJSessionId(){
     //alert(basket_id);   
     }
     
-    
+    function panel_menu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+} 
     
     </script>
     
@@ -527,13 +534,13 @@ width: 1px; position: absolute; top: -9999px; z-index: 100000;" id="_atssh"></di
     <noscript>Please enable JavaScript to view </noscript>
 
 
-<div class="topnav" class="topnav responsive" id="myTopnav">
+<div class="topnav" class="topnav" id="myTopnav">
   <a href="#home" class="active"><img src="https://i.postimg.cc/44zptTvG/logo.png" style="width:100%;min-width: 262px;/*! margin: auto; *//*! position: absolute; *//*! top: 40%; */text-align: center;"></a>
    <a href="#contact">About</a>
   <a href="#basket_link">Basket</a>
  
   <a href="#about"></a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" onclick="panel_menu()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
