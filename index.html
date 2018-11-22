@@ -548,11 +548,11 @@ top: 0px; background:linear-gradient(135deg, black, black 60%, white)">
   <a href="#home" class="active" style="background: url(https://i.postimg.cc/44zptTvG/logo.png);background-size: 21%; background-size: 51vmin;background-repeat: no-repeat;background-attachment: fixed;width: 51vmin;background-position: 0% 2%;margin-top: 14px;"></a>
    <a onclick="openCity(event, 'About');panel_menu();window.location.href='#About'; return false;" >Products</a>
 	<a onclick="openCity(event, 'FAQ');panel_menu();window.location.href='#FAQ'; return false;" >About</a>
-  <a href="#basket_link" style="color:yellow;" onclick="panel_menu();window.location.href='#basket_link; return false;">Basket</a>
+  <a href="#basket_link" style="color:yellow;" onclick="openCity(event, 'My_basket');panel_menu();window.location.href='#My_basket; return false;">Basket</a>
 
   <a  onclick="panel_menu();window.location.href='#ContactUs'; return false;"> Customer Services</a>
 
-  <a  onclick="openCity(event, 'Lab');panel_menu();window.location.href='#Lab'; return false;"> Lab</a>
+  <a style="display:none" onclick="openCity(event, 'Lab');panel_menu();window.location.href='#Lab'; return false;"> Lab</a>
 	
 	
 	
@@ -2002,6 +2002,30 @@ width: 40vmin;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAABbCAYAA
                 </div>
 
     
+								      
+			<div id="ContactUs" style="height:auto;">
+    
+    
+    
+                    <p>
+                        <h2>Customer Service - Mon-Fri - 9am - 5pm</h2>
+                        07946135915<br>
+                        <h2>E-mail:</h2>
+                        info@cbdcartel.co.uk<br>
+                        <h2>Address:</h2>
+                        Animus Concia Ltd<br>Aberdeen<br>AB24 5NB
+     <br><br>
+       <small>  Animus Concia Ltd, Companies House Number #SC511234</small>
+                      
+    
+                        
+
+                    </p>
+                </div>
+								      
+								      
+								      
+								      
     
     <div id="Returns" class="tabcontent" style="height:auto;">
     
@@ -2391,9 +2415,14 @@ background: transparent;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 /*! margin-left: 5px; */margin-bottom:5px; height:auto; " id="100">
 
-          <div id="basket_link" style="width:100%;clear:both;heighkkt:200px;">
+          <div id="basket_link" class="tabContent" style="width:100%;clear:both;heighkkt:200px;">
 
-<div style="margin: auto;
+
+        <div style="width:95%; margin:auto;" id="My_basket" class="tabContent">
+					    
+					    
+					    
+					    <div style="margin: auto;
 width: 98%;
 font-size: 44px;font-size: 8vmin;
 textdd-alidgn: center;
@@ -2403,7 +2432,8 @@ padding-top: 10px;">
   My Basket</div>
 
 </div>
-        <div style="width:95%; margin:auto;">
+					    
+					    
         <a name="basket">
            
             <h3><font id="basket_count"></font></h3>
@@ -2658,25 +2688,6 @@ Email:	<br>
 		        <br>
 			
 			
-			<div id="ContactUs" style="height:auto;">
-    
-    
-    
-                    <p>
-                        <h2>Customer Service - Mon-Fri - 9am - 5pm</h2>
-                        07946135915<br>
-                        <h2>E-mail:</h2>
-                        info@cbdcartel.co.uk<br>
-                        <h2>Address:</h2>
-                        Animus Concia Ltd<br>Aberdeen<br>AB24 5NB
-     <br><br>
-       <small>  Animus Concia Ltd, Companies House Number #SC511234</small>
-                      
-    
-                        
-
-                    </p>
-                </div>
 			
 			
 			
