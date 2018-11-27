@@ -60,7 +60,7 @@ elem.disabled = "true";
 	
 	elem.innerHTML="Updating Basket";
 		
-		window.location.href='#basket_link'; 
+		document.getElementById('basket_form').style.display='';
 	}
     //alert(basket_id);
 	
@@ -564,7 +564,7 @@ top: 0px; background:linear-gradient(135deg, black, black 60%, white)">
 }"></a>
    <a onclick="openCity(event, 'About');panel_menu();window.location.href='#About'; return false;" >Products</a>
 	<a onclick="openCity(event, 'FAQ');panel_menu();window.location.href='#FAQ'; return false;" >About</a>
-  <a href="#basket_link" style="display:none;color:yellow;font-weight:bold;" onclick="panel_menu();window.location.href='#basket_link'; return false;">My Basket    <font id="bassket_count_menu" style="font-weight:bold;z-index: 2000; background: greeen;font-size: 12px;border-radius: 22px;border: 2px solid black; background: lightblue;color:black">0</font> items</a>
+  <a href="#basket_link" style="display:none;color:yellow;font-weight:bold;" onclick="panel_menu();document.getElementById('basket_form').style.display='';">My Basket    <font id="bassket_count_menu" style="font-weight:bold;z-index: 2000; background: greeen;font-size: 12px;border-radius: 22px;border: 2px solid black; background: lightblue;color:black">0</font> items</a>
 
   <a  onclick="panel_menu();window.location.href='#ContactUs'; return false;"> Contact</a>
 
@@ -572,7 +572,7 @@ top: 0px; background:linear-gradient(135deg, black, black 60%, white)">
 	
 	
 	<div style="float:right;margin-right: 1vmin;">
-<img onclick="panel_menu();window.location.href='#basket_link'; return false;" style="width:6vmin;float:right;vertical-align: bottom;margin-top: 7px;" src="https://i.postimg.cc/prXH3hfM/11949853531506526982cesto-architetto-frances-01-svg-med.png">
+<img onclick="panel_menu();document.getElementById('basket_form').style.display='';return false;" style="width:6vmin;float:right;vertical-align: bottom;margin-top: 7px;" src="https://i.postimg.cc/prXH3hfM/11949853531506526982cesto-architetto-frances-01-svg-med.png">
   
 <font id="basket_count_menu" style="font-weight:bold;z-index: 2000; background: greeen;font-size: 12px;border-radius: 22px;border: 2px solid black; background: lightblue;color:black">0</font></div>
 	
@@ -2284,10 +2284,10 @@ width: 40vmin;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAABbCAYAA
 <div class="parallax">
         <div id="basket_linkcccc" style="width:100%;clear:both;hlleight:400px;"></div></div>
 
-		<div style="border: 6px solid navy;
+		<div id="basket_form" style="border: 6px solid navy;
 text-align: center;
 font-size: 3.5vh;
-display: block;
+display: none;
 position: fixed;
 width: 100%;
 top: -78px;
@@ -2323,7 +2323,7 @@ height: auto;
 font-size: 18px;
 
 font-size: 3.5vmin;" id="basket_contents">Please press the  <b>-</b>  and the  <b> + </b>  buttons below any product you wish add to the basket</div><div style="width:90%;margin: auto;font-size: 10px;font-size: 1.8vmin;">
-<button onclick="openCity(event, 'About');window.location.href='#About'; return false;" style="font-size:16px;font-size:3.2vmin;background: black;border: 1px solid grey;color: white;width: 28%;margin: auto;font-weight: bold;float:left;">Continue Shopping</button>
+<button onclick="openCity(event, 'About');window.location.href='#About'; document.getElementById('basket_form').style.display='none';return false;" style="font-size:16px;font-size:3.2vmin;background: black;border: 1px solid grey;color: white;width: 28%;margin: auto;font-weight: bold;float:left;">Continue Shopping</button>
   
 		    <button style="border: 0px;padding: 8px;font-size: 20px;font-size: 3.2vmin;font-weight: bold;color: white;background-color: #2c87f0;float:right;border: 0px;padding: 8px;" onclick="document.getElementById('card_form').style.display='block'; return false;">Proceed to Checkout</button>
 		    
