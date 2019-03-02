@@ -3614,15 +3614,15 @@ function load_external_java(script_name){var head= document.getElementsByTagName
 	    var hash = window.location.hash;
 	    
 	    if(hash){
-		    basket_id=hash;
+		    basket_id=location.hash.substr(1);
 		    alert(basket_id);
 	    }
-	    
+	    var basket_idz = basket_id;
 	    
         var timeStamp = Math.floor(Date.now());
 
-    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_id;
-        
+    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz;
+        alert(url);
         
 //load_external_java(url);
   //      return;
