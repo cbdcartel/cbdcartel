@@ -285,6 +285,7 @@ function getJSessionId(){
         
  basket_id= id;
 	    window.location.hash = id;
+	    document.getElementById("reloader").href="/#"+id;
     //alert(basket_id);   
     }
     
@@ -580,7 +581,7 @@ z-index: 1000;
 top: 0px; background:linear-gradient(135deg, black, black 60%, white)">
 	
 	
-  <a href="http://cbdcartel.co.uk" class="active" style="
+  <a id="reloader" href="" class="active" style="
      // background: url(https://i.postimg.cc/44zptTvG/logo.png);
     background-position-x: 0%;
     background-position-y: 0%;
