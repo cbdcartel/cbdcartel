@@ -63,9 +63,36 @@ var redirect = url.searchParams.get("redirect");
    }
 	
 	function put_checkout_price(price){
-	    document.getElementById("checkout_price").innerHTML = price;	
+	    document.getElementById("checkout_price").innerHTML = price;
+		
+		
+		
+		
+		
+	}
+       function put_subtotal_price(price){
+	    document.getElementById("subtotal").innerHTML = price;
+		
+		
+		
+		
+		
+	}
+	
+	function put_shipping_price(price){
+	    document.getElementById("shipping").innerHTML = price;
+		
+		
+		
+		
+		
 	}
        
+       
+
+	
+
+	
 	
 	function scrollSmoothTo(elementId) {
   var element = document.getElementById(elementId);
@@ -2704,7 +2731,10 @@ Email:	<br>
 <font style="text-decoration:underline;color:blue;" onclick="show_payment();">Delivery</font>/<font style="text-decoration:underline;color:blue;" onclick="show_payment();">Returns</font> Policies		    
 		    
 		    <br>
-		    </p><div style="
+		    </p>
+
+	
+	<div style="
     /* margin-top: 5vmin; */
     /* margin-bottom: 5vmin; */
     font-size: 40px;
@@ -2712,7 +2742,27 @@ Email:	<br>
     font-weight: bold;
     width: 100%;
     margin: 5vmin auto;
-" id="checkout_price">£34.99</div>
+" id="subtotal"></div>
+	
+	<div style="
+    /* margin-top: 5vmin; */
+    /* margin-bottom: 5vmin; */
+    font-size: 40px;
+    font-size: 6.2vmin;
+    font-weight: bold;
+    width: 100%;
+    margin: 5vmin auto;
+" id="shipping"></div>
+	
+	<div style="
+    /* margin-top: 5vmin; */
+    /* margin-bottom: 5vmin; */
+    font-size: 40px;
+    font-size: 6.2vmin;
+    font-weight: bold;
+    width: 100%;
+    margin: 5vmin auto;
+" id="checkout_price"></div>
     <button style="font-size: 40px;font-size: 6.2vmin;font-weight: bold;color: white;background-color: #2c87f0;margin-top: 18px;border: 0px;padding: 8px;" onclick="show_payment2();">Pay</button>
 		    
 		    
