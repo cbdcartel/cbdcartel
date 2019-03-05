@@ -66,6 +66,14 @@ var redirect = url.searchParams.get("redirect");
 	    document.getElementById("checkout_price").innerHTML = price;	
 	}
        
+	
+	function scrollSmoothTo(elementId) {
+  var element = document.getElementById(elementId);
+  element.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
+}
        
 function loadXMLDoc(request_url,elem="dud") {
 	if(elem!="dud"){
@@ -284,7 +292,7 @@ function getJSessionId(){
         
         
  basket_id= id;
-	   /// window.location.hash = id;
+	   window.location.hash = id;
 	    document.getElementById("reloader").href="/#"+id;
     //alert(basket_id);   
     }
@@ -600,11 +608,13 @@ height: 10vmin;
 <img src="https://i.postimg.cc/pTHc5M9R/Photo-1549212152436.png" style="
     height: 100%;
 "></a>
-   <a onclick="panel_menu();window.location.href='#Products'; return false;">Shop</a>
-	<a onclick="openCity(event, 'FAQ');panel_menu();window.location.href='#FAQ'; return false;" class=" active active">About</a>
+   <a onclick="
+	       
+	       panel_menu();scrollSmoothTo('Products'); return false;">Shop</a>
+	<a onclick="panel_menu();scrollSmoothTo('FAQ');; return false;" class=" active active">About</a>
    <a hredf="/about.html" href="#basket_link" style="display:none;color:yellow;font-weight:bold;" onclicdk="document.getElementById('basket_form').style.display='';">My Basket    <font id="bassket_count_menu" style="font-weight:bold;z-index: 2000; background: greeen;font-size: 12px;border-radius: 22px;border: 2px solid black; background: lightblue;color:black">0</font> items</a>
 
-  <a hrecf="/about.html" onclick="panel_menu();window.location.href='#ContactUs'; return false;"> Contact</a>
+  <a hrecf="/about.html" onclick="panel_menu();scrollSmoothTo('ContactUs'); return false;"> Contact</a>
 
   <a hredf="/about.html" style="display:none" onclick="openCity(event, 'Lab');panel_menu();window.location.href='#Lab'; return false;"> Lab</a>
 	
