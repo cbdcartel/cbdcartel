@@ -290,10 +290,22 @@ function getJSessionId(){
     
     function set_basket_id(id){
         
-        
+ if (typeof(Storage) !== "undefined") {    
+	    	    if (localStorage.basket) {
+  id = localStorage.basket;
+} else {
+  localStorage.basket = id;
+}
+ }
+	    
+	    
  basket_id= id;
 	   window.location.hash = id;
 	    document.getElementById("reloader").href="/#"+id;
+	    
+
+	    
+	    
     //alert(basket_id);   
     }
     
@@ -604,7 +616,7 @@ background-attachment: fixed;
 background-position: 1% 2%;
 margin-top: 0px;
 height: 10vmin;
- ">
+ " onclick="window.location.reload();" >
 <img src="https://i.postimg.cc/pTHc5M9R/Photo-1549212152436.png" style="
     height: 100%;
 "></a>
