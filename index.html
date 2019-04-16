@@ -356,35 +356,16 @@ function getJSessionId(){
     document.body.className = "page-loading";
 },false);
     </script>
-    
+    <script src="pace.js"></script>
+  <link href="pace.css" rel="stylesheet" />
+
   <!-- TrustBox script -->
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async=""></script>
 <!-- End Trustbox script -->  
     <style>
 	    
 	    
-	    @keyframes page-load {
-    from {
-        background-color: #ffc422;
-    }
-    to {
-        background-color: #c0392b;
-    }
-}
-.page-loading::before {
-    content:" ";
-    display:block;
-    position:fixed;
-    z-index:10;
-    height:2px;
-    width:100%;
-    top:0;
-    left:0;
-    background-color:#06D;
-    animation: page-load infinite ease-out 2s;
-    box-shadow:0 2px 2px rgba(0,0,0,.2);
-}
-	    
+	
 	    html{
 		    scroll-behavior: smooth;
 	    }
